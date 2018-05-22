@@ -27,8 +27,4 @@ public class FeignDemoApplication {
 		return Logger.Level.FULL;
 	}
 
-//	@Bean
-//	public RequestInterceptor basicAuthRequestInterceptor() {
-//		return requestTemplate -> requestTemplate.header("myHeader", "myHeaderValue");
-//	}
 }
