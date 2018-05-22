@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(name = "foo", url = "http://localhost:4444/feign")
 public interface LocalhostClient {
 
-    @RequestMapping(method = RequestMethod.GET, path = "/feign")
+    @RequestMapping(method = RequestMethod.GET, path = "/feign", headers = {"foo=${secret.token}"})
     public String feign();
 
 }
